@@ -14,23 +14,23 @@ import Contacts from "./pages/Contacts";
 
 
 function App() {
-        return (
-                <div className="App">
-                        <Router>
-                                <ScrollToTop />
-                                <Navbar />
-                                <Routes>
-                                        <Route path="/" element={<Home />} />
-                                        <Route path="/project/:id" element={<Project />} />
-                                        <Route path="/projects" element={<Projects />} />
-                                        <Route path="/contacts" element={<Contacts />} />
-                                </Routes>
+	return (
+		<div className="App">
+			<Router>
+				<ScrollToTop />
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/project/:id" element={<Project />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/contacts" element={<Contacts />} />
+				</Routes>
 
-                                <Footer />
-                        </Router>
-                </div >
+				<Footer />
+			</Router>
+		</div >
 
-        );
+	);
 }
 
 export default App;

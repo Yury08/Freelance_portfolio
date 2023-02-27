@@ -119,11 +119,11 @@ body {
         font-size: 16px;
         font-weight: 500;
 
-        transition: opacity 0.2s ease-in;
+        transition: all 600ms ease;
 }
 
 .btn:hover {
-        opacity: 0.8;
+        transform: scale(1.1);
 }
 
 .btn:active {
@@ -221,6 +221,21 @@ body {
 .content-list__item p+p {
         margin-top: 0.5em;
 }
+
+.projects a {
+        transition: all 600ms ease;
+}
+
+.project__title {
+        transition: all 600ms ease;
+}
+
+.projects a:hover {
+        transform: translate(-15px, -15px);
+
+}
+
+
 
 @media (max-width: 620px) {
 

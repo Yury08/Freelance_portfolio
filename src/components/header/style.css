@@ -1,6 +1,6 @@
 .header {
         padding: 40px 0;
-        min-height: 695px;
+        min-height: 92vh;
 
         display: flex;
         justify-content: center;
@@ -46,4 +46,49 @@
 
 .header__text p+p {
         margin-top: 0.5em;
+}
+
+/* animated text */
+.change {
+        transition: all 0.2s linear;
+}
+
+.second__change {
+        transition: all 0.2s linear;
+}
+
+.change:hover {
+        color: var(--accent);
+        font-size: 50px;
+        cursor: pointer;
+}
+
+.second__change:hover {
+        color: #fff;
+        font-size: 50px;
+        cursor: pointer;
+}
+
+.title-2 {
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+}
+
+.title-2:hover::after {
+        width: 100%;
+        right: 0;
+}
+
+.title-2::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        right: 0;
+        position: absolute;
+        background: var(--accent);
+        transition: width .5s ease 0s, right .5s ease 0s;
+        width: 0;
 }
